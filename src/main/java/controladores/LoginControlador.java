@@ -12,6 +12,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/login")
 public class LoginControlador extends HttpServlet {
@@ -24,14 +25,16 @@ public class LoginControlador extends HttpServlet {
 
         boolean isValidUser = verificarUsuarioEnAPI(correo, password);
         String rol = obtenerRolDesdeAPI(correo);
-        
+
         if (isValidUser) {
+            HttpSession session = request.getSession();
+            session.setAttribute("email", correo);
+            session.setAttribute("rol", rol); 
+
             if ("Administrador".equals(rol)) {
                 response.sendRedirect("menuAdministrador.jsp");
-            } else if ("usuario".equals(rol)) {
+            } else if ("Gerente".equals(rol)) {
                 response.sendRedirect("index.jsp");
-            } else if ("sin_rol".equals(rol)) {
-                response.sendRedirect("sinRol.jsp");
             } else {
                 request.setAttribute("errorMessage", "Rol desconocido.");
                 request.getRequestDispatcher("login.jsp").forward(request, response);

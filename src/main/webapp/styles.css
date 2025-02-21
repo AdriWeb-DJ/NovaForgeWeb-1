@@ -1,77 +1,45 @@
-@charset "UTF-8";
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0B3D91; /* Azul espacial */
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
 
-/* Estilos del contenedor de login */
-.login-container {
-    background: #1A478E;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    margin: 100px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Estilos para inputs y labels */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    text-align: left;
-    color: #FFD700; /* Amarillo para resaltar etiquetas */
-}
-
-input {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    text-align: center;
-}
-
-/* Botón de inicio de sesión */
-button {
-    background: #FBC02D;
-    color: black;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background: #FFA000;
-}
-
-/* Estilos del index */
-p {
-    font-size: 18px;
-    margin-top: 50px;
-}
-
-/* Botón en index.jsp */
-button {
-    margin-top: 20px;
-    background: #1976D2;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #135BA1;
-}
+        /* ========== GLOBAL STYLES ========== */
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+        	background-color: #ffffff;
+        }
+        /* ========== NAVBAR ========== */
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .bg-blue-purple {
+    		background-color: #1a1a3b !important;
+		}
+        /* ========== FEATURED PRODUCTS ========== */
+        .card {
+            border: none;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+        .card-text {
+            font-size: 0.9rem;
+        }
+        /* ========== FOOTER ========== */
+        footer {
+            background-color: #040418;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        footer p {
+   			color: #ffffff;
+		}
+        .footer-links a {
+            color: #fff;
+            margin: 0 0.5rem;
+        }
+        .footer-links a:hover {
+            color: #ff4c4c;
+        }
