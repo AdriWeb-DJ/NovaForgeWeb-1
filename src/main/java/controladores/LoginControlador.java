@@ -34,7 +34,7 @@ public class LoginControlador extends HttpServlet {
             if ("Administrador".equals(rol)) {
                 response.sendRedirect("menuAdministrador.jsp");
             } else if ("Gerente".equals(rol)) {
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("menuGerente.jsp");
             } else {
                 request.setAttribute("errorMessage", "Rol desconocido.");
                 request.getRequestDispatcher("login.jsp").forward(request, response);

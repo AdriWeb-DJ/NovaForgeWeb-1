@@ -9,11 +9,13 @@
     
     <link rel="stylesheet" href="styles.css">
     
+    <link rel="icon" href="img/icono.png" type="image/png">
+    
 </head>
 <body>
     <!-- ========== NAVBAR ========== -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-blue-purple text-white p-3">
-        <div class="container">
+        <div class="container bg-blue-purple">
             <a class="navbar-brand" href="index.jsp">NovaForgeGames</a>
             <button class="navbar-toggler" type="button" 
                     data-bs-toggle="collapse" 
@@ -95,7 +97,7 @@
             <!-- Producto 1 -->
             <div class="col">
                 <div class="card text-white">
-                    <img src="assets/img/producto1.jpg" class="card-img-top" alt="Producto 1">
+                    <img width="580" height="350" src="img/MiSide.jpg" class="card-img-top" alt="Producto 1">
                     <div class="card-body">
                         <h5 class="card-title">Producto 1</h5>
                         <p class="card-text">Breve descripción del producto 1.</p>
@@ -106,7 +108,7 @@
             <!-- Producto 2 -->
             <div class="col">
                 <div class="card text-white">
-                    <img src="assets/img/producto2.jpg" class="card-img-top" alt="Producto 2">
+                    <img width="580" height="350" src="img/helldivers.jpg" class="card-img-top" alt="Producto 2">
                     <div class="card-body">
                         <h5 class="card-title">Producto 2</h5>
                         <p class="card-text">Breve descripción del producto 2.</p>
@@ -117,7 +119,7 @@
             <!-- Producto 3 -->
             <div class="col">
                 <div class="card text-white">
-                    <img src="assets/img/producto3.jpg" class="card-img-top" alt="Producto 3">
+                    <img width="580" height="350" src="img/sot.jpg" class="card-img-top" alt="Producto 3">
                     <div class="card-body">
                         <h5 class="card-title">Producto 3</h5>
                         <p class="card-text">Breve descripción del producto 3.</p>
