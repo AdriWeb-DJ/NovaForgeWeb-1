@@ -19,6 +19,7 @@
     <meta charset="UTF-8">
     <title>Menú Administrador</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="img/icono.png" type="image/png">
 </head>
 <body class="bg-dark text-white">
     
@@ -30,8 +31,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Usuarios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="infousuarios.jsp">Usuarios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Configuración</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-danger text-white" href="index.jsp">Cerrar sesión</a></li>
                 </ul>
@@ -41,7 +41,7 @@
 
     <div class="container text-center mt-5">
         <h1>Bienvenido, Administrador</h1>
-        <p>Desde aquí puedes gestionar la plataforma.</p>
+        <p>Esta es el panel para gestionar a los usuarios</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
