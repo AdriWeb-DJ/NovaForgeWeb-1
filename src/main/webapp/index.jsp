@@ -35,13 +35,13 @@
                         <a class="nav-link" href="#">Consolas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Accesorios</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.jsp">Iniciar Sesion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.jsp">Registro</a>
                     </li>
                 </ul>
             </div>

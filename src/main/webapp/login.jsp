@@ -31,7 +31,12 @@
                 <%= request.getAttribute("errorMessage") %>
             </div>
         <% } %>
+        
+         <div class="mt-3 text-center">
+            <a href="registro.jsp" class="btn btn-warning w-100">Registrarse</a>
+        </div>
     </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -15,5 +15,7 @@
 	<classpathentry kind="lib" path="C:/Users/Adrian Prado/Downloads/spring-web-6.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Adrian Prado/Downloads/spring-beans-6.0.0.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/json-20210307.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/gson-2.8.9.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/jstl-1.2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
