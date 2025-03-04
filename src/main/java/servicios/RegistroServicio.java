@@ -34,7 +34,7 @@ public class RegistroServicio {
             // Enviar la solicitud y obtener la respuesta
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
-            // Verificar si la respuesta es 201 (CREATED)
+            // Verificar si la respuesta HTTP es 201 (para verificar que se ha creado)
             return response.statusCode() == 201;
 
         } catch (Exception e) {
