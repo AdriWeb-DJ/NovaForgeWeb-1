@@ -4,10 +4,19 @@ import dtos.UsuarioDto;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * Servicio para validar las credenciales del usuario.
+ */
 public class LoginServicio {
 
     private static final String API_URL = "http://localhost:9080/api/usuarios";
 
+    /**
+     * Valida las credenciales de un usuario a través de la API.
+     * @param correoElectronico el correo electrónico del usuario.
+     * @param contrasena la contraseña del usuario.
+     * @return true si las credenciales son válidas, false en caso contrario.
+     */
     public boolean validarCredenciales(String correoElectronico, String contrasena) {
         System.out.println("Validando credenciales para: " + correoElectronico);
 

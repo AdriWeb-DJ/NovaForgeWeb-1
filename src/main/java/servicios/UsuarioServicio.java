@@ -9,10 +9,18 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
+/**
+ * Servicio para interactuar con la API y obtener usuarios.
+ */
 public class UsuarioServicio {
 
     private static final String API_URL = "http://localhost:9080/api/usuarios";
 
+    /**
+     * Obtiene todos los usuarios desde la API.
+     * @return una lista de objetos UsuarioDto.
+     * @throws RuntimeException si ocurre un error al obtener los usuarios.
+     */
     public List<UsuarioDto> obtenerTodosLosUsuarios() {
         try {
             URL url = new URL(API_URL);

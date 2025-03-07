@@ -6,11 +6,19 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import com.google.gson.Gson;
 
+/**
+ * Servicio para actualizar un usuario a través de la API.
+ */
 public class ActualizarServicio {
 
     private static final String API_URL = "http://localhost:9080/api/usuarios/modificar/";
     private final Gson gson = new Gson();
 
+    /**
+     * Actualiza un usuario en la API.
+     * @param usuario el usuario a actualizar.
+     * @return true si la actualización fue exitosa, false en caso contrario.
+     */
     public boolean actualizarUsuario(UsuarioDto usuario) {
         try {
             URL url = new URL(API_URL + usuario.getId());
@@ -31,7 +39,7 @@ public class ActualizarServicio {
             int responseCode = conn.getResponseCode();
             System.out.println("Código de respuesta: " + responseCode); // Depuración
 
-            return responseCode == 200; // Asumiendo que la API devuelve 200 si la actualización fue exitosa
+            return responseCode == 200; // La API devuelve 200 si la actualización fue exitosa
         } catch (Exception e) {
             e.printStackTrace();
             return false;

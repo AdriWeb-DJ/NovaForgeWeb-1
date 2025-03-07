@@ -8,17 +8,28 @@ import java.nio.charset.StandardCharsets;
 import com.google.gson.Gson;
 import dtos.UsuarioDto;
 
+/**
+ * Servicio para registrar un nuevo usuario a través de la API.
+ */
 public class RegistroServicio {
 
     private static final String API_URL = "http://localhost:9080/api/usuarios/crear";
     private final HttpClient httpClient;
     private final Gson gson;
 
+    /**
+     * Constructor que inicializa el cliente HTTP y el convertidor JSON.
+     */
     public RegistroServicio() {
         this.httpClient = HttpClient.newHttpClient();
         this.gson = new Gson();
     }
 
+    /**
+     * Registra un nuevo usuario en la API.
+     * @param usuario el objeto UsuarioDto con los datos del nuevo usuario.
+     * @return true si el registro es exitoso, false en caso contrario.
+     */
     public boolean registrarUsuario(UsuarioDto usuario) {
         try {
             // Convertir el objeto UsuarioDto a JSON
